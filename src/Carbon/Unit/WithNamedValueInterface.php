@@ -30,5 +30,7 @@ interface WithNamedValueInterface
      *                                                                     string is an absolute or relative date/time
      *                                                                     string.
      */
-    public function valueForDateTime($dateTime): NamedUnitValueInterface;
+    public function valueForDateTime(
+        DateTimeInterface|CarbonInterface|string|int|float $dateTime,
+    ): NamedUnitValueInterface;
 }

@@ -20,5 +20,5 @@ interface UnitValueInterface
 {
     public function getUnit(): UnitInterface;
 
-    public function getValue(): float;
+    public function getValue(): float|int;
 }

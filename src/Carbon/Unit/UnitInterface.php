@@ -54,5 +54,7 @@ interface UnitInterface
      *                                                                     string is an absolute or relative date/time
      *                                                                     string.
      */
-    public function valueForDateTime($dateTime): UnitValueInterface;
+    public function valueForDateTime(
+        DateTimeInterface|CarbonInterface|string|int|float $dateTime,
+    ): UnitValueInterface;
 }
